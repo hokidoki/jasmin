@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: gray;
+        }
+        .logo span:hover{
+            color: gray;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            height: 10vh;
+            min-height: 50px;
+        }
+        ul{
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+        .logo{
+            line-height: 10vh;
+            margin-left: 10px;
+        }
+        ul li{
+            margin-right: 10px;
+            line-height:10vh; 
+            float: left;
+        }
+        .containner{
+            height: 80vh;
+            background-color: gray;
+        }
+        .float{
+            float: left;
+        }
+        .content{
+            width: 70%;
+            height: 80vh;
+            background-color: gray;
+        }
+        .aside{
+            background-color: coral;
+            width: 15%;
+            height: 80vh;
+        }
+        .footer{
+            background-color: black;
+            height: 10vh;
+            color: white;
+        }
+        @media(max-width:1000px){
+            .aside{
+                display: none;
+            }
+            .content{
+                width: 100%;
+                color: white;
+            }
+            
+            ul{
+                display: inline-block;
+                text-align: center;
+                position: static;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .header{
+                text-align: center;
+                height: 15vh;
+            }
+            ul li{
+                margin-top: -25px;
+                
+            }
+            .logo{
+                text-align: center;
+                line-height: 50px;
+            }
+            .footer{
+                margin-top: -5vh;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="header">
+       <div class="logo">
+           <span>LOGO</span>
+       </div>
+       <ul>
+           <li class="hover"><a href="#">로그인</a></li>
+           <li class="hover"><a href="#">회원가입</a></li>
+           <li class="hover"><a href="#">사이트맵</a></li>
+       </ul>
+   </div>
+   <div class="containner">
+        <div class="float aside">aside</div>
+        <div class="float content">content</div>
+        <div class="float aside">aside</div>
+   </div>
+   <div class="footer">
+       foot
+   </div>
+</body>
+</html>
